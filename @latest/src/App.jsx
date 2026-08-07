@@ -7,7 +7,7 @@ export default function App() {
   useEffect(() => {
     const timer = setInterval(() => {
       console.log(count);
-      setCount(count + 1)
+        setCount(prev => prev + 1)
     }, 1000)
 
     return () => clearInterval(timer)
