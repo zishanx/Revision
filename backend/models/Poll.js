@@ -5,4 +5,8 @@ const user = {
     }
 };
 
-user.greet(); // ? 
+user.greet(); 
+
+const greetFn = user.greet; 
+
+greetFn();
