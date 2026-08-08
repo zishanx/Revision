@@ -1,16 +1,8 @@
-function outer (){
-    let counter = 0 
-
-    return function inner(){
-        counter++
-        console.log(counter)
+const user = {
+    name: "Zizzy",
+    greet: function(){
+        console.log(this.name);
     }
+};
 
-    console.log(counter)
-}
-
-let increase = outer()
-
-increase()
-increase()
-increase()
+user.greet(); // ? 
