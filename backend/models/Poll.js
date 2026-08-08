@@ -5,8 +5,5 @@ const user = {
     }
 };
 
-user.greet(); 
+setTimeout(user.greet.bind(user), 1000);
 
-const greetFn = user.greet; 
-
-greetFn();
