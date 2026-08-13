@@ -1,11 +1,21 @@
+// old way 
 
+function Dog (name) {
+    this.name = name
+}
+
+Dog.prototype.bark  = function (){
+    console.log(this.name + " says woof! ")
+}
+
+// new way 
 class Dog {
     constructor(name){
         this.name = name;
     }
 
     bark() {
-        console.log(this.name + "says woof!")
+        console.log(this.name + " says woof!")
     }
 }
 
