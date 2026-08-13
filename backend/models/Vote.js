@@ -1,8 +1,14 @@
-import mongoose from 'mongoose'
+class Dog {
+    constructor(name) {
+        this.name = name
+    }
 
-const VoteSchema = mongoose.Schema({
-    pollId: ObjectId,   // which poll
-    userId: ObjectId,   // who voted
-    option: String,     // what they chose
-    createdAt: Date
-})
+    bark() {
+        console.log(this.name + " says Woof!")
+    }
+}
+
+
+const d1 = new Dog("Max")
+
+d1.bark()
