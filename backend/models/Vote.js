@@ -1,14 +1,6 @@
-class Dog {
-    constructor(name) {
-        this.name = name
-    }
+import mongoose from "mongoose";
 
-    bark() {
-        console.log(this.name + " says Woof!")
-    }
-}
+const VoteSchema = new mongoose.Schema({
+    name: {type:String, require:true},
 
-
-const d1 = new Dog("Max")
-
-d1.bark()
+})
